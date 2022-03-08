@@ -5,8 +5,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="shortcut icon" href="./img/Removal-870.png" type="image/x-icon">
   <link rel="stylesheet" href="./style.css">
-  <title>Meta Mask</title>
+  <title>A crypto wallet & gateway to blockchain apps | MetaMask</title>
 </head>
 <body>
     <div class="container">
@@ -43,34 +45,34 @@
       </section>
 
       <section class="Section-1">
-        <div class="section-1--row">
+        <div class="section-1--row" data-aos="fade-right">
           <h2 class="section-1__h2">Buy, store, send and swap tokens</h2>
           <p class="section-1__p">Available as a browser extension and as a mobile <br> app, MetaMask equips you with a key vault, secure <br> login, token wallet, and token exchange— <br> everything you need to manage your digital <br> assets.</p>
         </div>
 
-        <div class="section-1--row2">
+        <div class="section-1--row2" data-aos="fade-left">
           <img class="imgg setion-1--img" src="./img/wallet-illo.svg" alt="">
         </div>
       </section>
 
       <section class="Section-2">
-        <div>
+        <div data-aos="fade-right">
           <img class="imgg" src="./img/Explore-illo.svg" width="640" height="360" alt="">
         </div>
 
-        <div class="section-1--row">
+        <div class="section-1--row" data-aos="fade-left">
           <h2 class="section-1__h2">Explore blockchain apps</h2>
           <p class="section-1__p">MetaMask provides the simplest yet most secure <br> way to connect to blockchain-based applications. <br> You are always in control when interacting on the <br> new decentralized web.</p>
         </div>
       </section>
 
       <section class="Section-1">
-        <div class="section-1--row">
+        <div class="section-1--row" data-aos="fade-right">
           <h2 class="section-1__h2">Own your data</h2>
           <p class="section-1__p">MetaMask generates passwords and keys on<br> your device, so only you have access to your <br> accounts  and data. You always choose <br> what to share and what to keep private.</p>
         </div>
 
-        <div class="section-1--row2">
+        <div class="section-1--row2" data-aos="fade-left">
           <img class="imgg setion-1--img" width="640" height="360" src="./img/Browse-illo.svg" alt="">
         </div>
       </section>
@@ -185,5 +187,15 @@
         <div class="footer__copyright">@2022 MetaMask • A ConsenSys Formation</div>
       </footer>
     </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <script>
+      AOS.init({
+        once: true,
+        offset: 400,
+        duration: 1000
+      });
+    </script> 
 </body>
 </html>
