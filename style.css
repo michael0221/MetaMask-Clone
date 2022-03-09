@@ -40,7 +40,22 @@ li{
   padding: 8px 32px;
   background-color: #037dd6;
   border-radius: 4rem;
+  cursor: pointer;
   color: #fff;
+}
+.nav-items ul li a{
+  text-decoration: none;
+  color: #333;
+}
+.nav-items ul li a:hover{
+  color: #037dd6;
+}
+.footer-items ul li a{
+  text-decoration: none;
+  color: #6A737D;
+}
+.footer-items ul li a:hover{
+  color: #037dd6;
 }
 .herosection{
   padding-top: 48px;
@@ -49,6 +64,14 @@ li{
   padding-left: 200px;
   padding-right: 200px;
 
+}
+.section-6 div a{
+  text-decoration: none;
+  color: #E9EBEE;
+
+}
+.section-6 div a:hover{
+  color: #037dd6;
 }
 h1{
   font-size: 48px;
@@ -62,6 +85,7 @@ h1{
   padding: 8px 20px;
   color: rgb(255, 255, 255);
   display: inline-flex;
+  cursor: pointer;
   justify-content: center;
   align-items: center;
   min-height: 52px;
@@ -334,7 +358,12 @@ h3{
     padding-right: 30px;
   }
   iframe{
-    display: none;
+    width: 400px;
+    height: 250px;
+    margin-left: 10px;
+    padding-left: 0px;
+    
+    padding-right: 5px;
   }
   .section-5--img{
     flex-wrap: wrap;
