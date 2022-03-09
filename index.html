@@ -16,7 +16,7 @@
         <div class="logo"><img src="./img/mm-logo.svg" alt=""></div>
         <div class="nav-list">
           <div class="nav-items">
-            <ul>
+            <ul id="menuList">
               <li> <a href=""> Features<span><i class="ri-arrow-down-s-line"></i></span></a></li>
               <li> <a href="">Support<span><i class="ri-arrow-down-s-line"></i></span></a> </li>
               <li> <a href=""> About<span><i class="ri-arrow-down-s-line"></i></span></a></li>
@@ -24,6 +24,7 @@
               <li><div class="btn">Download</div></li>
             </ul>
           </div>
+          <i class="ri-menu-line" onclick="togglemenu()"></i>
         </div>
       </nav>
 
@@ -201,17 +202,35 @@
     </script> 
 
     <script>
-      document.addEventListener("mousemove", parallax);
-      function parallax(e){
-        this.querySelectorAll(".svg").forEach(svg => {
-          const speed = svg.getAttribute("data-speed")
+      document.addEventListener("mousemove", (e) => {
+        
+        let svg = document.querySelector(".svg")
+          // const speed = svg.getAttribute("data-speed")
 
-          const x = (window.innerWidth - e.pageX*speed)/100
-          const y = (window.innerWidth - e.pageY*speed)/100
-          
-          svg.style.transform = `translateX(${x}px) translateY(${y}px)`
-        })
-      }
+          // const x = (window.innerWidth - e.pageX*speed)/100
+          // const y = (window.innerWidth - e.pageY*speed)/100
+          // console.log(x)
+          // svg.style.transform = `rotate3d(1,1,1,${e.clientX - 180}deg)`
+          // console.log(e)
+      })
     </script>
+
+<script>
+  var menuList = document.getElementById("menuList");
+
+  menuList.style.maxHeight  = "0px";
+
+  function togglemenu()
+  {
+      if(menuList.style.maxHeight == "0px")
+      {
+          menuList.style.maxHeight = "200px";
+      }
+      else
+      {
+          menuList.style.maxHeight = "0px";
+      }
+  }
+</script>
 </body>
 </html>

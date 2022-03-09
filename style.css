@@ -19,6 +19,9 @@ nav{
   top: 0;
   padding: 24px 200px;
 }
+.nav-list i{
+  display: none;
+}
 .nav-items ul{
   display: flex;
   justify-content: center;
@@ -330,18 +333,50 @@ h3{
   *{
     overflow-x: hidden;
   }
-  .nav-list{
+  nav{
+    position: static;
+    top: 0px;
+    
+  }
+  .nav-items ul{
+    width: 100%;
+    background: whitesmoke;
+    position: absolute;
+    top: 75px;
+    flex-direction: column;
+    
+    right: 0;
+    z-index: 0;
+  }
+  .nav-items ul li{
+    padding: 1px 0px;
+    margin-bottom: 10px;
+  }
+  .nav-items ul li span{
     display: none;
+  }
+  #menuList{
+    /* overflow: hidden; */
+    transition: 0.5s;
+}
+  .nav-list i{
+    display: block;
+    padding-top: 5px;
+    font-size: 20px;
   }
   nav{
     padding-left: 30px;
+    padding-right: 30px;
     
   }
   .herosection__col-2 img{
     width: 100%;
+    height: 350px;
   }
   .herosection{
     padding-left: 30px;
+    margin-top: 0px;
+    padding-top: 0px;
     padding-right: 30px;
   }
   .herosection--top{
@@ -366,10 +401,9 @@ h3{
   iframe{
     width: 400px;
     height: 250px;
-    margin-left: 10px;
+    
     padding-left: 0px;
     
-    padding-right: 5px;
   }
   .section-5--img{
     flex-wrap: wrap;
